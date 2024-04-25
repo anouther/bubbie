@@ -1,0 +1,69 @@
+<html>
+<meta charset='UTF-8'/>
+  <title>ILY HAREL</title>
+<meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/>
+<meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js">
+</script>
+<link href="style.css" rel="stylesheet" type="text/css" /><script src="script.js"></script>
+<body>
+<style>body{background-image: url("bg.jpg");background-repeat: no-repeat;background-size: 100% 100%;font-family: 'Playfair Display', serif; animation:none;transition:all .3s ease;}</style>
+
+<div id="konten"><div id="foto"><div class="image"><img id="photo" src="tkthao219-bubududu.gif" width="200px" height="200px"/></div><span id="sp2"></span></div>
+
+<div id='slider'>
+  <p>hi, halo, hai, bello, yellow &nbsp; sayangkuuu <b id="kamu"></b></p>
+  <p>tanggal berapa ya sekarang? 🤔🤔🤔</p>
+  <p>YAYAYAYAYAYAY BETUL! tanggal 24 </p>
+  <p>emang ada apasih tanggal 24 ini? coba kasih tau aku</p>
+  <p>KITA MENSIVERSARY WOI PACALKUUU DUNIAKUU</p>
+  <p>happy 7th mensiversary, cincau. selamat tanggal ke–24 untuk ke yang tujuh kalinya ❤️💋</p>
+  <p>thank you for being a boyfie yang selalu ada buat aku, likes to make me smile every time i chit chat with you, bener bener SERU BGTBGTBGTBGT apalagi aku ledekin kamu :b </p>
+  <p>sayang, thank you for staying with me.i hope we have more time together and just know that i'll always be there for you. you'll always be my favorite person</p>
+  <p>whatever happens, i will still be with you, mau hujan angin, hujan badai, angin topan, banjir, aku tetep sama kamu disini, i'm your #01 biggest fans!</p>
+  <p>tap my love<label class='lovein' onClick="duar()">&#128158;</label></p>
+</div><div id="contTom"><a class='button whatsapp' onClick='bukaWa();'><i class='icon whatsapp'></i>Kirim</a></div>
+</div>
+<div id="bodyblur"></div>
+
+<script>  
+var a=0,finish;
+finish = "once more, happy mensiversary sayangku cintaku kasihku pacarku kesayanganku duniaku, i'm so so so lucky to met you and to have you in my life, u're my superharel 🦸🏻, iloveyouuu";
+
+function play() {
+  var audio = new Audio('Bruno Major - The Most Beautiful Thing (Lyric & Chord Video).mp3');
+  audio.play();
+}
+            
+ function bukaWa(){window.location = "https://t.me/HvaechanLee"}
+</script>
+ 
+<script type="text/javascript">            
+            var today = new Date();var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear()+'.';var dateTime = date;
+            const swals = Swal.mixin({
+                allowOutsideClick: false,
+            });
+            async function mulai(){
+                var { value: nama } = await swals.fire({
+                    title: 'Masukin nama kamu!',
+                    input: 'text',
+                    confirmButtonText: 'next',
+                    showCancelButton: false,
+                });                           
+                if(nama){
+                	window.nama = nama;
+                    finish = finish + ", " + nama + "!";    
+                    document.getElementById("kamu").innerHTML = "" + window.nama;
+                    setTimeout(showDiv, 700);play();                      
+                } else {
+                    await swals.fire('Heh! Jangan dikosongin atuh namanya buru isi 😡');
+                    mulai();
+                }
+            }
+            mulai();
+</script>
+</body>
+</html>
